@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>WHAR | Home</title>
+      <link rel="icon" href="../static/media/logo.png" type="image/x-icon">
+      <link rel="stylesheet" href="../static/style.css">
+      <link rel="stylesheet" href="../static/indexInput.css">
+      <script src="../static/script.js"></script>
+   </head>
+   <body>
+      <header>
+         <div class="row">
+            <div class="column">
+               <p class="p-header" onclick="openHome()">Wise Household Appliances Repair
+               <p style="display: inline; font-size: 16pt;"><sup>&copy;</sup></p>
+               <p></p>
+            </div>
+            <div class="column">
+               <img class="img-header" style="float: right; padding-right: 20px; margin-top: -14px;"
+                  src="../static/media/logo.png" alt="logo" width="66" onclick="openHome()">
+               <img class="img-header" style="padding-right: 50px" src="../static/media/whatsapp.png" alt="whatsapp"
+                  width="40" onclick="window.open('https://www.whatsapp.com/');">
+               <img class="img-header" src="../static/media/instagram.png" alt="instagram" width="40"
+                  onclick="window.open('https://www.instagram.com/');">
+               <img class="img-header" src="../static/media/twitter.png" alt="twitter" width="40"
+                  onclick="window.open('https://twitter.com/');">
+               <img class="img-header" src="../static/media/facebook.png" alt="facebook" width="40"
+                  onclick="window.open('https://www.facebook.com/');">
+            </div>
+         </div>
+      </header>
+      <div class="navigation">
+         <div class="row" style="padding-top: 10px; padding-bottom: 10px; text-align: center;">
+            <div class="nav-column" style="background-color: rgb(171, 216, 255);" onclick="openHome()">
+               Home
+            </div>
+            <div class="nav-column" onclick="openServices()">
+               Services
+            </div>
+            <div class="nav-column" onclick="openAboutUs()">
+               About us
+            </div>
+            <div class="nav-column" onclick="openContactUs()">
+               Contact us
+            </div>
+            <div class="nav-column" onclick="openEmployees()">
+               Employees
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div class="column" style="width: 80%;">
+            <form name="searchBox" action="#" onsubmit="alert('Ooops... Nothing was found!')">
+               <div class="search">
+                  <input type="text" id="search" name="search" placeholder="Search..."
+                     style="border: 1px solid rgba(0, 0, 0, 0.299);">
+               </div>
+            </form>
+            <div class="news">
+               <div class="row-news" style="animation: anim 0.5s forwards;">
+                  <div class="column" style="width: 20%;">
+                     <img src="../static/media/repair.png" alt="discount"
+                        style="float: left; display: inline; padding-top: 20px; width: 100%;">
+                  </div>
+                  <div class="column" style="width: 78%; margin-right: 1%; margin-left: 1%;">
+                     <h2 class="h2-home" style="color: rgb(248, 31, 31);"
+                        onclick="window.open('https://tsi.lv/future-students/loyalty-grants/discounts-and-grants-from-tsi/','_self')">
+                        Discount !
+                     </h2>
+                     <p style="font-size: 17pt;">Hello dear client! Ready to read the news? We have special
+                        discount! If you hand over 3
+                        items of household appliances at the same time, you will receive a total 15% discount!
+                        The promotion will run until the end of the year. Do not miss your chance and come to
+                        us. We will always serve, help and give you advice!
+                     </p>
+                     <div class="see-more"
+                        onclick="window.open('https://tsi.lv/future-students/loyalty-grants/discounts-and-grants-from-tsi/','_self')">
+                        See more
+                     </div>
+                  </div>
+               </div>
+               <div class="row-news" style="animation: anim 2s forwards;">
+                  <div class="column" style="width: 20%;">
+                     <img src="../static/media/address_icon.png" alt="discount"
+                        style="float: left; display: inline; padding-left: 30px; width: 70%;">
+                  </div>
+                  <div class="column" style="width: 78%; margin-right: 1%; margin-left: 1%;">
+                     <h2 class="h2-home" onclick="openContactUs()">We are on the new place !</h2>
+                     <p style="font-size: 17pt;">We have moved and are ready to meet customers in a new place!
+                        Our new address is now:
+                        Lomonosova street 1, Riga, LV-1019. Come visit us and get the opportunity to receive a
+                        discount!
+                     </p>
+                     <div class="see-more" onclick="openContactUs()">See more</div>
+                  </div>
+               </div>
+               <div class="row-news" style="margin-bottom: 100px; animation: anim 3.5s forwards;">
+                  <div class="column" style="width: 20%;">
+                     <img src="../static/media/team.png" alt="discount" style="float: left; display: inline; padding-left: 30px; padding-top: 10px;
+                        width: 70%;">
+                  </div>
+                  <div class="column" style="width: 78%; margin-right: 1%; margin-left: 1%;">
+                     <h2 class="h2-home" onclick="openNewMemb()">Become part of our team !</h2>
+                     <p style="font-size: 17pt;">Join us in our friendly team. Interesting events and bonuses
+                        will be waiting for you! If you have an education or experience in household appliances
+                        repair or management, then prepare a CB, because we will always consider it and accept
+                        any worthy candidate.
+                     </p>
+                     <div class="see-more" onclick="openNewMemb()">See more</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="column" style="width: 20%; background-color: rgb(245, 218, 168);">
+            <img src="../static/media/ad_1.jpg" alt="ad1" style="cursor: pointer; width: 100%;" onclick="openAd(1)">
+            <br>
+            <img src="../static/media/ad_2.jpg" alt="ad2" style="cursor: pointer; width: 100%;" onclick="openAd(2)">
+            <br>
+            <img src="../static/media/ad_3.jpg" alt="ad3" style="cursor: pointer; width: 100%;" onclick="openAd(3)">
+            <br>
+            <img src="../static/media/ad_4.jpg" alt="ad3" style="cursor: pointer; width: 100%;" onclick="openAd(4)">
+         </div>
+      </div>
+      <div class="row" style="background-color: rgba(175, 235, 235, 0.107); border-top: 1px solid rgba(0, 0, 0, 0.048);
+         margin-top: 0px;">
+         <div class="column-div" style="width: 25%;">
+            &nbsp;
+         </div>
+         <div class="column-div" style="width: 50%;">
+            <div class="row"
+               style="margin-bottom: 20px;  margin-top: 20px; text-align: center; animation: anim 4s forwards;">
+               <img class="reviews-img" src="../static/media/Jon_Arryn.png" alt="Jon Arryn" style="width: 10%;">
+               <br>
+               <h2>Jon Arryn</h2>
+               <p class="reviews-p" style="font-style: italic; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                  "Repair of household appliances is not just a repair, but a whole range of services, including
+                  diagnostics, installation, and after-sales service. And all this is provided by WHAR very
+                  quickly. So if anything, I always know where to turn."
+               </p>
+               <hr>
+            </div>
+            <div class="row" style="margin-bottom: 20px; text-align: center; animation: anim 5s forwards;">
+               <img class="reviews-img" src="../static/media/Edmure_Tully.png" alt="Edmure Tully" style="width: 10%;">
+               <br>
+               <h2>Edmure Tully</h2>
+               <p class="reviews-p" style="font-style: italic; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                  "It was a great experience to purchase WHAR services.
+                  The employees are very generous and always happy to help customers!"
+               </p>
+               <hr>
+            </div>
+            <div class="row" style="padding-bottom: 60px; text-align: center;  animation: anim 6s forwards;">
+               <img class="reviews-img" src="../static/media/Mance_Rayder.jpg" alt="Mance Rayder" style="width: 10%;">
+               <br>
+               <h2>Mance Rayder</h2>
+               <p class="reviews-p" style="font-style: italic; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                  "I found an advertisement for the repair of a washing machine and decided to call. They answered
+                  me and immediately agreed on a convenient time for me. The master came and did everything in an
+                  hour. The repair was inexpensive, given that the master came to my house. Very satisfied,
+                  thanks! :)"
+               </p>
+               <hr>
+            </div>
+         </div>
+      </div>
+      <footer>
+         &copy; 2022 Wise Household Appliances Repair | whar.com &#8482;
+      </footer>
+   </body>
+</html>

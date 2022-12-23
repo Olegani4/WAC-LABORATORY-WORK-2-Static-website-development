@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>WHAR | Repair Application</title>
+      <link rel="icon" href="../static/media/logo.png" type="image/x-icon">
+      <link rel="stylesheet" href="../static/style.css">
+      <script src="../static/script.js"></script>
+   </head>
+   <body>
+      <header>
+         <div class="row">
+            <div class="column">
+               <p class="p-header" onclick="openHome()">Wise Household Appliances Repair
+               <p style="display: inline; font-size: 16pt;"><sup>&copy;</sup></p>
+               <p></p>
+            </div>
+            <div class="column">
+               <img class="img-header" style="float: right; padding-right: 20px; margin-top: -14px;"
+                  src="../static/media/logo.png" alt="logo" width="66" onclick="openHome()">
+               <img class="img-header" style="padding-right: 50px" src="../static/media/whatsapp.png" alt="whatsapp"
+                  width="40" onclick="window.open('https://www.whatsapp.com/');">
+               <img class="img-header" src="../static/media/instagram.png" alt="instagram" width="40"
+                  onclick="window.open('https://www.instagram.com/');">
+               <img class="img-header" src="../static/media/twitter.png" alt="twitter" width="40"
+                  onclick="window.open('https://twitter.com/');">
+               <img class="img-header" src="../static/media/facebook.png" alt="facebook" width="40"
+                  onclick="window.open('https://www.facebook.com/');">
+            </div>
+         </div>
+      </header>
+      <div class="navigation">
+         <div class="row" style="padding-top: 10px; padding-bottom: 10px; text-align: center;">
+            <div class="nav-column" onclick="openHome()">
+               Home
+            </div>
+            <div class="nav-column" style="background-color: rgb(171, 216, 255);" onclick="openServices()">
+               Services
+            </div>
+            <div class="nav-column" onclick="openAboutUs()">
+               About us
+            </div>
+            <div class="nav-column" onclick="openContactUs()">
+               Contact us
+            </div>
+            <div class="nav-column" onclick="openEmployees()">
+               Employees
+            </div>
+         </div>
+      </div>
+      <form name="repairForm" action="#" onsubmit="return formValidation()" style="min-width: 1000px;">
+         <div style="text-align: center;">
+            <h1>Repair Application</h1>
+         </div>
+         <div class="row" style="text-align: center; font-size: 18pt; margin-left: -20px;">
+            <div class="column" style="text-align: right;">
+               <label for="name" style="display: inline; padding-right: 60px;">Enter your name:</label>
+               <br>
+               <input class="short-input" type="text" name="name" id="name" placeholder="Name">
+            </div>
+            <div class="column" style="text-align: left; margin-left: 20px; width: 30%;">
+               <label for="surname" style="display: inline; padding-left: 60px;">Enter your surname:</label>
+               <br>
+               <input class="short-input" type="text" name="surname" id="surname" placeholder="Surname">
+            </div>
+         </div>
+         <div style="text-align: center; font-size: 18pt;">
+            <br>
+            <label for="e-mail" style="display: inline;">Enter your e-mail:</label>
+            <br>
+            <input class="long-input" type="text" name="e-mail" id="e-mail" placeholder="For example: name@myemail.com">
+            <span class="span-error" id="e-mail_error" style=" display: none;"> <br>E-mail was entered incorrectly!
+            Enter e-mail using this form: name@myemail.com<br></span>
+            <span id="break"> <br> </span>
+            <br>
+            <label for="phone-num" style="display: inline;  margin-left: 10px;">Enter your phone number:</label>
+            <br>
+            <input class="long-input" type="text" name="phone-num" id="phone-num"
+               placeholder="For example: +37167100661">
+            <span class="span-error" id="phone-num_error" style=" display: none;"><br>Phone number was entered
+            incorrectly! Enter number using this form: +37167100661</span>
+            <br>
+            <br>
+            <label for="app-type" style="display: inline;  margin-left: 10px;">Choose your household appliance type
+            for repair:</label>
+            <br>
+            <select class="long-input" name="app-type" id="app-type" style="width: 624px;">
+               <option value="volvo">Small appliance</option>
+               <option value="saab">Major appliance</option>
+               <option value="opel">Consumer electronics</option>
+            </select>
+            <br>
+            <br>
+            <p style="display: inline;  margin-left: 10px;">Select the option where to receive a service:
+            </p>
+            <br>
+            <input type="checkbox" name="inOffice" id="inOffice" onclick="checkCheckBox1()">
+            <label for="inOffice" style="display: inline;  margin-left: 25px;">In our office</label>
+            <br>
+            <input type="checkbox" name="atAdress" id="atAdress" onclick="checkCheckBox2()">
+            <label for="atAdress" style="display: inline;  margin-left: 10px;">At my address</label>
+            <br>
+            <br>
+            <span id="dateTime" style="display: none;">
+            <label for="address" style="display: inline;">Enter your address:</label>
+            <br>
+            <input class="long-input" type="text" name="address" id="address" placeholder="My address">
+            <br>
+            <br>
+            <span style="display: inline;  margin-left: 10px;">Select the desired date and time when to receive
+            a service:
+            </span>
+            <br>
+            <br>
+            <label for="date" style="display: inline;  margin-left: 10px;">Date:</label>
+            <input type="date" name="date" id="date">
+            <br>
+            <br>
+            <label for="time" style="display: inline;  margin-left: 10px;">Time:</label>
+            <input type="time" name="time" id="time">
+            <br>
+            <br>
+            <br>
+            </span>
+            <label for="my-problem" style="display: inline;  margin-left: 10px;">Please decribe your problem:</label>
+            <br>
+            <input class="long-input" type="text" name="myProblem" id="my-problem" placeholder="My problem..."
+               style="padding-bottom: 120px;">
+            <br>
+            <br>
+            <input class="button-bm" type="submit" name="submit" id="submit" value="Send Application"
+               onclick="checkEmail()">
+            <br>
+            <br>
+            <br>
+         </div>
+      </form>
+      <footer>
+         &copy; 2022 Wise Household Appliances Repair | whar.com &#8482;
+      </footer>
+   </body>
+</html>
